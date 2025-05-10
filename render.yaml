@@ -11,19 +11,17 @@ services:
     numInstances: 1
     healthCheckPath: /
     envVars:
-      - key: N8N_BASIC_AUTH_ACTIVE
-        value: true
-      - key: N8N_BASIC_AUTH_USER
-        value: admin
-      - key: N8N_BASIC_AUTH_PASSWORD
-        value: xZ@3vN#8qL!7RpWdPz9m
+      - key: N8N_HOST
+        value: 0.0.0.0
       - key: N8N_PORT
         value: 5678
-      - key: N8N_HOST
-        value: n8n-5q8q.onrender.com
       - key: N8N_PROTOCOL
         value: https
       - key: WEBHOOK_URL
+        value: https://n8n-5q8q.onrender.com
+      - key: N8N_WEBHOOK_URL
+        value: https://n8n-5q8q.onrender.com
+      - key: N8N_VIEWS_URL
         value: https://n8n-5q8q.onrender.com
       - key: N8N_EDITOR_BASE_URL
         value: https://n8n-5q8q.onrender.com

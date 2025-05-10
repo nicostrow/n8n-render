@@ -2,6 +2,8 @@ services:
   - type: web
     name: n8n
     env: docker
+    dockerfilePath: ./Dockerfile
+    startCommand: n8n start
     region: oregon # optional (defaults to oregon)
     plan: starter # optional (defaults to starter)
     branch: main # optional (defaults to master)
